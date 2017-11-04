@@ -88,16 +88,14 @@ function filterPlaces(){
     var filteredPlaces;
     
     // places after filtering
-    console.log("Testing1..........")
+    // console.log("Testing1..........");
     this.filteredTestPlaces = ko.computed(function () {
-        console.log("Testing2..........")
-        // If many white spaces in a row, replace with only one white space
-        // fText = self.filterSearch().replace(/\s+/g, ' ');
+        // console.log("Testing2..........");
         
         // If there is anything in the search box, filter for this
         // As of now this does not divide the filterSearch and only searches the Name field
         filteredPlaces = ko.utils.arrayFilter(self.testPlaces(), function(test) {
-            console.log("Testing3..........::" + this.markers().length)
+            // console.log("Testing3..........::" + this.markers().length);
             if(self.filterSearch().length){
                 console.log("Test: " + this.markers().length);
                 return ( test.name.toUpperCase().indexOf(self.filterSearch().toUpperCase()) >= 0);
@@ -124,7 +122,7 @@ function filterPlaces(){
 
             
             
-        },);
+        });
         
         return x1;
     }, self);
