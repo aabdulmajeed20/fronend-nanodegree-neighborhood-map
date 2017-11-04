@@ -55,7 +55,7 @@ function addMarkers(ml, mp) {
     });
 
     marker.addListener('click', function() {
-        self.infoWindowContent = '<h4>'+"HI Test"+'</h4>' +
+        self.infoWindowContent = '<h4>'+marker.title+'</h4>' +
         '<h6>'+self.phone+'</h6>' +
         '<h6>'+self.address+'</h6>' +
         '<a href="'+self.url+'">'+self.url+'</a>';
