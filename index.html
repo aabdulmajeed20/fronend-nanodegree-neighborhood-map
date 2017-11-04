@@ -9,10 +9,18 @@
 </head>
 
 <body>
-    <div class="col-lg-4 col-md-4 col-xs-12"></div>
+    <div class="row">
+    <div class="col-lg-4 col-md-4 col-xs-12">
+        <input type="text" data-bind="value: filterSearch, vlaueUpdate: 'afterkeydown'" class="form-control" placeholder="Search">
+            <div class="list-group" data-bind="foreach: filteredTestPlaces">
+                <a href="#" class="list-group-item" data-bind="text: name"></a>
+    </div>
+</div>
     <div id="map" class="col-lg-8 col-md-8 col-xs-12"></div>
 
-    <script src="js/jQuery.js"></script>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="js/knockout.js"></script>    
     <script src="js/main.js"></script>
     <script async defer
