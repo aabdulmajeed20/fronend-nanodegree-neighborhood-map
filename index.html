@@ -5,22 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title of the document</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <input type="text" data-bind="value: filter, vlaueUpdate: 'afterkeydown'" class="form-control" placeholder="Search">
+    <div class="list-group" data-bind="foreach: visiblePlaces">
+        <a href="#" class="list-group-item" data-bind="text: title, click: trigger"></a>
+</div>
+  </div>
+  
+  <!-- Use any element to open the sidenav -->
+  <h2 class="navbar-toggler-icon" onclick="openNav()">open</h2>
 <body>
     <div class="row">
     <div class="col-lg-4 col-md-4 col-xs-12">
-        <input type="text" data-bind="value: filter, vlaueUpdate: 'afterkeydown'" class="form-control" placeholder="Search">
-            <div class="list-group" data-bind="foreach: visiblePlaces">
-                <a href="#" class="list-group-item" data-bind="text: title, click: trigger"></a>
-    </div>
+            
 </div>
     <div id="map" class="col-lg-8 col-md-8 col-xs-12"></div>
 
 </div>
 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="js/knockout.js"></script>    
     <script src="js/main.js"></script>
