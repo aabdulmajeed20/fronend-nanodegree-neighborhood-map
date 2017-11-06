@@ -25,7 +25,7 @@ var myPlaces = [
     {name: 'Diet Center', location: {lat: 24.806374, lng: 46.692644}},
     {name: 'Starbucks', location: {lat: 24.805670, lng: 46.693202}},
     {name: 'Cinnabon', location: {lat: 24.806232, lng: 46.692786}}
-]
+];
 
 Place = function (data) {
     var self = this;
