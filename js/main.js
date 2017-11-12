@@ -1,3 +1,13 @@
+/* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
 // locations to add it to the map
 var myPlaces = [
     {name: 'Kudo', location: {lat: 24.806545, lng: 46.693032}},
