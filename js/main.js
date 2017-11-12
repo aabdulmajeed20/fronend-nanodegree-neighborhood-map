@@ -95,9 +95,7 @@ function filterPlaces(){
         // As of now this does not divide the filterSearch and only searches the Name field
         
         filteredPlaces = ko.utils.arrayFilter(self.testPlaces(), function(test) {
-            // console.log("Testing3..........::" + this.markers().length);
-                if(test.marker)
-                {
+                if(test.marker) {
                     test.marker.setMap(map);
                 }
             if(self.filterSearch().length){
