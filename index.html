@@ -14,7 +14,7 @@
                 <div class="col-lg-4 col-md-4 col-xs-12">
                     <input type="text" data-bind="value: filterSearch, vlaueUpdate: 'afterkeydown'" class="form-control" placeholder="Search">
                         <div class="list-group" data-bind="foreach: filteredTestPlaces">
-                            <a href="#" class="list-group-item" data-bind="text: name"></a>
+                            <a href="#" class="list-group-item" data-bind="text: name, click: showInfo"></a>
                 </div>
             </div>
                 <div id="map" class="col-lg-8 col-md-8 col-xs-12"></div>
