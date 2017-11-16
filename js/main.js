@@ -130,7 +130,7 @@ function filterPlaces(){
     var filteredTestPlaces = this.filteredTestPlaces();
 }
 function showInfo(a) {
-        google.maps.event.trigger( a.marker, 'click' )
+        google.maps.event.trigger(a.marker, 'click');
         return;
     }
 $(document).ready( function(){
